@@ -1,0 +1,186 @@
+{
+  "pipeline": "Re-Gen Unified Architecture",
+  "versao": "3.0",
+  "timestamp_inicio": "2026-07-17T12:07:05.897660",
+  "timestamp_fim": "2026-07-17T12:17:58.944427",
+  "duracao_total_segundos": 653.0144734382629,
+  "dinossauro": "Stegosaurus stenops",
+  "hospedeiro": "Gallus gallus",
+  "fases": [
+    {
+      "fase": 0,
+      "nome": "Seleção Paleontológica",
+      "status": "concluído",
+      "duracao_s": 0.0017430782318115234,
+      "dados": {
+        "especie": "Stegosaurus stenops",
+        "nome_comum": "Estegossauro",
+        "grupo": "Theropoda",
+        "periodo": "Cretáceo (145-66 Ma)",
+        "peso_kg": 2700,
+        "comprimento_m": 9.0,
+        "genes_conservados": [
+          "HOX",
+          "PAX6",
+          "BMP",
+          "FOXP2"
+        ],
+        "descendentes_vivos": [
+          "Gallus gallus",
+          "Struthio camelus"
+        ],
+        "total_especies_banco": 530
+      }
+    },
+    {
+      "fase": 1,
+      "nome": "Mapeamento Filogenético e NCBI",
+      "status": "concluído",
+      "duracao_s": 208.1953432559967,
+      "dados": {
+        "n_descendentes_mapeados": 6,
+        "hospedeiro_crispr": "Gallus gallus",
+        "n_referencias_ncbi": 22,
+        "n_referencias_validadas": 18,
+        "genes_cobertos": [
+          "COI",
+          "ND1",
+          "POMC"
+        ],
+        "especies_referencia": [
+          "Alligator mississippiensis",
+          "Anas platyrhynchos",
+          "Anolis sagrei",
+          "Caiman crocodilus",
+          "Columba livia",
+          "Crocodylus niloticus",
+          "Falco peregrinus",
+          "Gallus gallus",
+          "Gavialis gangeticus",
+          "Iguana iguana",
+          "Struthio camelus",
+          "Trachemys scripta",
+          "Tyto alba"
+        ]
+      }
+    },
+    {
+      "fase": 2,
+      "nome": "Extração de DNA Fóssil",
+      "status": "ignorado",
+      "duracao_s": 0.0007817745208740234,
+      "dados": {
+        "motivo": "Nenhum fóssil fornecido — reconstrução 100% filogenética"
+      }
+    },
+    {
+      "fase": 3,
+      "nome": "Reconstrução Genômica",
+      "status": "concluído",
+      "duracao_s": 443.1197564601898,
+      "dados": {
+        "comprimento_epb_bp": 17230,
+        "comprimento_escala_bp": 2100000000,
+        "comprimento_escala_gb": 2.1,
+        "range_valido_2_3gb": true,
+        "n_cromossomos": 40,
+        "janelas_ncbi_reais": 46,
+        "familias_te_dfam": [
+          "CR1-F_Aves",
+          "AviSINE",
+          "CHARLIE1a",
+          "ERVL-MaLR"
+        ],
+        "dfam_online": false,
+        "confianca_media_pct": 99.99709808473592,
+        "gc_pct": 45.77481137550784,
+        "n_ambiguidades": 0,
+        "n_ambiguidades_pct": 0.0,
+        "n_regioes_baixa_confianca": 1,
+        "n_referencias_epb": 22,
+        "metodo": "EPB_gene_scale + EPB_Dfam_Scaffold_v2",
+        "validacao": {
+          "erros": 864,
+          "alertas": 3,
+          "chunks_validos": 2,
+          "chunks_invalidos": 0
+        },
+        "fasta_dir": "re_gen_output/genoma_escala_completa/chromosomes_fasta",
+        "manifest": "re_gen_output/genoma_escala_completa/genome_manifest.json"
+      }
+    },
+    {
+      "fase": 4,
+      "nome": "Pacote de Edição CRISPR",
+      "status": "concluído",
+      "duracao_s": 0.10677003860473633,
+      "dados": {
+        "hospedeiro": "Gallus gallus",
+        "identidade_genomica_pct": 27.54,
+        "n_edicoes_total": 12150,
+        "n_grnas_desenhados": 10,
+        "n_grnas_qualidade": 9,
+        "csv_edicoes": "re_gen_output/crispr/pacote_edicao_crispr.csv"
+      }
+    },
+    {
+      "fase": 5,
+      "nome": "Síntese Física de DNA",
+      "status": "concluído",
+      "duracao_s": 0.04860496520996094,
+      "dados": {
+        "integridade_score": 81.84615384615384,
+        "integridade_status": "WARN",
+        "storage_path": "re_gen_output/dna_storage/Stegosaurus_stenops",
+        "sha256": "9d6c7ba31c275157c94903a21526e2abbc78647cb9be650f957fc2010b55ca4d",
+        "tamanho_bytes": 43596,
+        "hardware_sintese": false
+      }
+    },
+    {
+      "fase": 6,
+      "nome": "Injeção no Embrião",
+      "status": "concluído",
+      "duracao_s": 1.5360195636749268,
+      "dados": {
+        "hospedeiro": "Gallus gallus",
+        "protocolo_hibridizacao": {
+          "temperatura_C": 37.5,
+          "duracao_min": 5,
+          "volume_dna_ancestral_uL": 500,
+          "volume_vetor_uL": 200
+        },
+        "hardware_injecao": false,
+        "volume_injecao_nL": 500,
+        "estagio_embriao": "HH4-5 (disco germinativo)"
+      }
+    },
+    {
+      "fase": 7,
+      "nome": "Incubação Monitorada",
+      "status": "concluído",
+      "duracao_s": 0.005454301834106445,
+      "dados": {
+        "temperatura_alvo_C": 37.8,
+        "umidade_alvo_pct": 55.0,
+        "dias_incubacao": 21,
+        "viragem_automatica": true,
+        "arduino_conectado": false,
+        "hospedeiro_ovo": "Gallus gallus"
+      }
+    }
+  ],
+  "genoma": {
+    "comprimento_bp": 17230,
+    "confianca_media_pct": 99.99709808473592,
+    "n_referencias": 22
+  },
+  "crispr": {
+    "n_edicoes": 12150,
+    "identidade_pct": 27.54
+  },
+  "integridade": {
+    "score": 81.84615384615384,
+    "status": "WARN"
+  }
+}

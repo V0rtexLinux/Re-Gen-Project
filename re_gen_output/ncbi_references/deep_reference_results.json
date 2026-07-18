@@ -1,0 +1,230 @@
+[
+  {
+    "species": "Gallus gallus",
+    "accession": "LC627431",
+    "gene": "COI",
+    "length": 16769,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Gallus gallus"
+    ]
+  },
+  {
+    "species": "Struthio camelus",
+    "accession": "Y12025",
+    "gene": "COI",
+    "length": 16591,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Struthio camelus"
+    ]
+  },
+  {
+    "species": "Anas platyrhynchos",
+    "accession": "L22476",
+    "gene": "COI",
+    "length": 2046,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Anas platyrhynchos"
+    ]
+  },
+  {
+    "species": "Columba livia",
+    "accession": "KC182081",
+    "gene": "COI",
+    "length": 650,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Columba livia"
+    ]
+  },
+  {
+    "species": "Gallus gallus",
+    "accession": "OR506257",
+    "gene": "ND1",
+    "length": 16787,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Gallus gallus"
+    ]
+  },
+  {
+    "species": "Falco peregrinus",
+    "accession": "KM876092",
+    "gene": "ND1",
+    "length": 2346,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Falco peregrinus"
+    ]
+  },
+  {
+    "species": "Tyto alba",
+    "accession": "KU712269",
+    "gene": "POMC",
+    "length": 7861,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": true,
+    "organism_lineage": [
+      "Tyto alba"
+    ]
+  },
+  {
+    "species": "Gavialis gangeticus",
+    "accession": "AJ810454",
+    "gene": "COI",
+    "length": 17023,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 240.0,
+    "validated": true,
+    "organism_lineage": [
+      "Gavialis gangeticus"
+    ]
+  },
+  {
+    "species": "Crocodylus niloticus",
+    "accession": "MT554047",
+    "gene": "ND1",
+    "length": 16322,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 240.0,
+    "validated": true,
+    "organism_lineage": [
+      "Crocodylus niloticus"
+    ]
+  },
+  {
+    "species": "Gavialis gangeticus",
+    "accession": "AB079596",
+    "gene": "ND1",
+    "length": 17185,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 240.0,
+    "validated": true,
+    "organism_lineage": [
+      "Gavialis gangeticus"
+    ]
+  },
+  {
+    "species": "Caiman crocodilus",
+    "accession": "MT554050",
+    "gene": "ND1",
+    "length": 16436,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 240.0,
+    "validated": true,
+    "organism_lineage": [
+      "Caiman crocodilus"
+    ]
+  },
+  {
+    "species": "Varanus komodoensis",
+    "accession": "AF407510",
+    "gene": "COI",
+    "length": 2799,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 310.0,
+    "validated": true,
+    "organism_lineage": [
+      "Varanus komodoensis"
+    ]
+  },
+  {
+    "species": "Iguana iguana",
+    "accession": "OQ076335",
+    "gene": "ND1",
+    "length": 16626,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 310.0,
+    "validated": true,
+    "organism_lineage": [
+      "Iguana iguana iguana"
+    ]
+  },
+  {
+    "species": "Varanus komodoensis",
+    "accession": "AF407510",
+    "gene": "ND1",
+    "length": 2799,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 310.0,
+    "validated": true,
+    "organism_lineage": [
+      "Varanus komodoensis"
+    ]
+  },
+  {
+    "species": "Trachemys scripta",
+    "accession": "GU586285",
+    "gene": "POMC",
+    "length": 1279,
+    "quality_score": 80.0,
+    "phylogenetic_distance_ma": 320.0,
+    "validated": true,
+    "organism_lineage": [
+      "Trachemys scripta"
+    ]
+  },
+  {
+    "species": "Gallus gallus",
+    "accession": "AB593427",
+    "gene": "POMC",
+    "length": 1244,
+    "quality_score": 60.0,
+    "phylogenetic_distance_ma": 150.0,
+    "validated": false,
+    "organism_lineage": [
+      "Gallus gallus"
+    ]
+  },
+  {
+    "species": "Anolis sagrei",
+    "accession": "AF528727",
+    "gene": "COI",
+    "length": 1728,
+    "quality_score": 60.0,
+    "phylogenetic_distance_ma": 310.0,
+    "validated": false,
+    "organism_lineage": [
+      "Anolis sagrei"
+    ]
+  },
+  {
+    "species": "Anolis sagrei",
+    "accession": "AF528727",
+    "gene": "ND1",
+    "length": 1728,
+    "quality_score": 60.0,
+    "phylogenetic_distance_ma": 310.0,
+    "validated": false,
+    "organism_lineage": [
+      "Anolis sagrei"
+    ]
+  },
+  {
+    "species": "Trachemys scripta",
+    "accession": "KM216749",
+    "gene": "ND1",
+    "length": 16791,
+    "quality_score": 60.0,
+    "phylogenetic_distance_ma": 320.0,
+    "validated": false,
+    "organism_lineage": [
+      "Trachemys scripta scripta"
+    ]
+  }
+]

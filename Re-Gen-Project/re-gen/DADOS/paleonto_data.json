@@ -1,0 +1,237 @@
+{
+  "version": "1.0",
+  "data_source": "Consolidação de dados de paleontologia recente e genômica evolutiva",
+  "ultima_atualizacao": "2026-07-14",
+  
+  "dinossauros": {
+    "Tyrannosaurus rex": {
+      "nome_comum": "T-Rex",
+      "grupo": "Theropoda",
+      "periodo": "Cretáceo (145-66 Ma)",
+      "peso_kg": 9000,
+      "comprimento_m": 12.3,
+      "altura_m": 4.0,
+      "dieta": "carnívoro",
+      "localizacao": ["América do Norte (USA, Canadá)"],
+      "genes_conservados": ["FOXP2", "PAX6", "HOX", "BMP"],
+      "taxa_diferencacao_ma": 66.0,
+      "descendentes_vivos": ["Gallus gallus", "Struthio camelus", "Falco peregrinus"],
+      "paleontologos_referencia": [
+        "Paul C. Sereno",
+        "Thomas R. Holtz",
+        "Scott Sampson"
+      ]
+    },
+    
+    "Velociraptor mongoliensis": {
+      "nome_comum": "Velociraptor",
+      "grupo": "Theropoda",
+      "periodo": "Cretáceo (145-66 Ma)",
+      "peso_kg": 10,
+      "comprimento_m": 1.8,
+      "altura_m": 0.5,
+      "dieta": "carnívoro",
+      "localizacao": ["Ásia (Mongólia)"],
+      "genes_conservados": ["HOXA", "HAND2", "PAX6"],
+      "taxa_diferencacao_ma": 75.0,
+      "descendentes_vivos": ["Falco peregrinus", "Accipiter nisus"],
+      "paleontologos_referencia": [
+        "Rinchen Barsbold",
+        "Halszka Osmólska",
+        "John Ostrom"
+      ]
+    },
+    
+    "Archaeopteryx lithographica": {
+      "nome_comum": "Archaeopteryx",
+      "grupo": "Theropoda",
+      "periodo": "Jurássico (201-145 Ma)",
+      "peso_kg": 1,
+      "comprimento_m": 0.5,
+      "altura_m": 0.2,
+      "dieta": "carnívoro",
+      "localizacao": ["Europa (Alemanha)"],
+      "genes_conservados": ["HOXA", "HOXC", "LMBR1", "BMP"],
+      "taxa_diferencacao_ma": 150.0,
+      "descendentes_vivos": ["Aves modernas (todas)"],
+      "paleontologos_referencia": [
+        "Luis M. Chiappe",
+        "Kevin Padian",
+        "Tom Holtz"
+      ],
+      "observacoes": "Fóssil transitório, penas bem preservadas"
+    },
+    
+    "Triceratops horridus": {
+      "nome_comum": "Triceratops",
+      "grupo": "Ornithischia",
+      "periodo": "Cretáceo (145-66 Ma)",
+      "peso_kg": 6000,
+      "comprimento_m": 9.0,
+      "altura_m": 3.0,
+      "dieta": "herbívoro",
+      "localizacao": ["América do Norte (USA, Canadá)"],
+      "genes_conservados": ["HOX", "BMP", "PTCH1"],
+      "taxa_diferencacao_ma": 66.0,
+      "descendentes_vivos": ["Crocodylus niloticus"],
+      "paleontologos_referencia": [
+        "Othniel Charles Marsh",
+        "David Varricchio",
+        "Gregory Paul"
+      ]
+    },
+    
+    "Brachiosaurus altithorax": {
+      "nome_comum": "Brachiosaurus",
+      "grupo": "Sauropodomorpha",
+      "periodo": "Jurássico (201-145 Ma)",
+      "peso_kg": 60000,
+      "comprimento_m": 25.0,
+      "altura_m": 13.0,
+      "dieta": "herbívoro",
+      "localizacao": ["América do Norte (USA)"],
+      "genes_conservados": ["HOX", "GREM1", "BMP"],
+      "taxa_diferencacao_ma": 145.0,
+      "descendentes_vivos": ["Crocodylus niloticus"],
+      "paleontologos_referencia": [
+        "Paul C. Sereno",
+        "Mark Norell",
+        "Alexander Kellner"
+      ],
+      "observacoes": "Ossos pneumáticos = redução de densidade"
+    }
+  },
+  
+  "descendentes_vivos": {
+    "Gallus gallus": {
+      "nome_comum": "Galinha-selvagem",
+      "taxa": "Aves",
+      "ancestral_direto": "Tyrannosaurus rex",
+      "anos_divergencia": 66000000,
+      "ncbi_genoma_id": "GCF_000002315.6",
+      "genes_ortologos": ["FOXP2", "PAX6", "HOXA", "BMP"],
+      "qualidade_anotacao_ncbi": 98,
+      "score_utilidade_genomica": 95
+    },
+    
+    "Struthio camelus": {
+      "nome_comum": "Avestruz",
+      "taxa": "Aves",
+      "ancestral_direto": "Tyrannosaurus rex",
+      "anos_divergencia": 66000000,
+      "ncbi_genoma_id": "GCF_000698965.2",
+      "genes_ortologos": ["FOXP2", "PAX6", "HOXA", "BMP"],
+      "qualidade_anotacao_ncbi": 85,
+      "score_utilidade_genomica": 88
+    },
+    
+    "Falco peregrinus": {
+      "nome_comum": "Falcão-peregrino",
+      "taxa": "Aves",
+      "ancestral_direto": "Velociraptor mongoliensis",
+      "anos_divergencia": 75000000,
+      "ncbi_genoma_id": "GCF_000337775.1",
+      "genes_ortologos": ["FOXP2", "PAX6", "OPN1SW", "HAND2"],
+      "caracteristicas_preservadas": ["visao_binocular", "garra_sicle"],
+      "qualidade_anotacao_ncbi": 78,
+      "score_utilidade_genomica": 82
+    },
+    
+    "Accipiter nisus": {
+      "nome_comum": "Gavião-pequeno",
+      "taxa": "Aves",
+      "ancestral_direto": "Velociraptor mongoliensis",
+      "anos_divergencia": 75000000,
+      "genes_ortologos": ["FOXP2", "PAX6", "OPN1SW", "HAND2"],
+      "qualidade_anotacao_ncbi": 72,
+      "score_utilidade_genomica": 78
+    },
+    
+    "Crocodylus niloticus": {
+      "nome_comum": "Jacaré-do-nilo",
+      "taxa": "Crocodilia",
+      "ancestral_direto_multiplo": ["Triceratops horridus", "Brachiosaurus altithorax", "Tyrannosaurus rex"],
+      "anos_divergencia": 250000000,
+      "ncbi_genoma_id": "GCF_000262185.1",
+      "genes_ortologos": ["FOXP2", "PAX6", "HOX", "BMP", "GREM1"],
+      "observacoes": "Parente vivo mais próximo de TODOS os dinossauros",
+      "qualidade_anotacao_ncbi": 96,
+      "score_utilidade_genomica": 92
+    },
+    
+    "Crocodylus acutus": {
+      "nome_comum": "Crocodilo-americano",
+      "taxa": "Crocodilia",
+      "ancestral_direto_multiplo": ["Triceratops horridus", "Brachiosaurus altithorax"],
+      "anos_divergencia": 250000000,
+      "genes_ortologos": ["FOXP2", "PAX6", "HOX", "BMP", "GREM1"],
+      "qualidade_anotacao_ncbi": 88,
+      "score_utilidade_genomica": 85
+    }
+  },
+  
+  "caracteristicas_filogenticas": {
+    "ossos_ocos": {
+      "descricao": "Ossos pneumáticos com câmaras de ar",
+      "preservado_em": ["Gallus gallus", "Struthio camelus", "Falco peregrinus"],
+      "genes_associados": ["FGFR3", "PTCH1", "GLI1"],
+      "origem": "Ancestral theropodo primitivo"
+    },
+    
+    "penas": {
+      "descricao": "Estruturas de pena (primárias, secundárias, cobertoras)",
+      "preservado_em": ["Gallus gallus", "Struthio camelus", "Falco peregrinus"],
+      "genes_associados": ["LMBR1", "SOX6", "HOXA"],
+      "origem": "Ancestral maniraptor (antes de Archaeopteryx)"
+    },
+    
+    "visao_binocular": {
+      "descricao": "Órbitas frontais convergentes",
+      "preservado_em": ["Falco peregrinus", "Accipiter nisus", "Crocodylus niloticus"],
+      "genes_associados": ["PAX6", "OPN1SW", "OPN1LW"],
+      "origem": "Ancestral theropodo arcaico"
+    },
+    
+    "estrutura_mandibular": {
+      "descricao": "Bico/mandíbula especializada",
+      "preservado_em": ["Gallus gallus", "Struthio camelus", "Crocodylus niloticus"],
+      "genes_associados": ["PAX9", "BARX1", "JAG1"],
+      "origem": "Ancestral onitísquio/theropodo"
+    },
+    
+    "dimorfismo_sexual": {
+      "descricao": "Diferenças físicas entre sexos",
+      "preservado_em": ["Struthio camelus", "Crocodylus niloticus"],
+      "genes_associados": ["SOX9", "SRY", "DHH"],
+      "origem": "Ancestral arcaico de archossauros"
+    }
+  },
+  
+  "referencias_paleontologos": {
+    "Paul C. Sereno": "University of Chicago - Evolutive Paleontology",
+    "Thomas R. Holtz": "University of Maryland - Vertebrate Paleontology",
+    "Luis M. Chiappe": "Los Angeles County Museum of Natural History - Avian Evolution",
+    "Rinchen Barsbold": "Mongolian Academy of Sciences - Theropod Evolution",
+    "Gregory Paul": "Independent researcher - Dinosaur paleoecology and biomechanics"
+  },
+  
+  "recomendacoes_reconstrucao": {
+    "sem_hardware": {
+      "prioridade": "Dinossauros com genomas mais conservados (menor taxa de diferenciação)",
+      "sugestao": "Archaeopteryx lithographica ou Tyrannosaurus rex",
+      "motivo": "Aves modernas preservam estruturas genômicas similares"
+    },
+    
+    "hardware_basico": {
+      "prioridade": "Espécies com genes bem mapeados em aves modernas",
+      "sugestao": "Velociraptor mongoliensis",
+      "motivo": "Genoma menor, genes de desenvolvimento bem conservados"
+    },
+    
+    "hardware_avancado": {
+      "prioridade": "Qualquer dinossauro - hardware suporta genomas grandes",
+      "sugestao": "Brachiosaurus altithorax",
+      "motivo": "Desafio científico máximo - saurópode gigante"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "project_name": "Re-Dino",
+  "dinosaur_name": "Stegosaurus_stenops",
+  "sequence_length": 17230,
+  "sequence_hash_sha256": "9d6c7ba31c275157c94903a21526e2abbc78647cb9be650f957fc2010b55ca4d",
+  "storage_date": "2026-07-17T12:17:57.365256",
+  "media_type": "DVD-R",
+  "error_correction": "reed-solomon",
+  "version": "1.0"
+}

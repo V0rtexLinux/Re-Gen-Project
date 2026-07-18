@@ -1,0 +1,10 @@
+{
+  "project_name": "Re-Dino",
+  "dinosaur_name": "Brachiosaurus_altithorax",
+  "sequence_length": 17188,
+  "sequence_hash_sha256": "520191a74213d8868de97533e16c2b59f0bd44325c5f9dc7825d7bc354c9feea",
+  "storage_date": "2026-07-17T12:17:49.061543",
+  "media_type": "DVD-R",
+  "error_correction": "reed-solomon",
+  "version": "1.0"
+}

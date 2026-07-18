@@ -1,0 +1,51 @@
+
+╔════════════════════════════════════════════════════════════════════════╗
+║           RELATÓRIO DE INTEGRIDADE DE DNA - RE-DINO PROJECT            ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+Status Geral: WARN
+Score Geral: 81.8/100
+
+Sequência: 17,230 bases
+
+Verificações Realizadas:
+────────────────────────────────────────────────────────────────────────
+
+✓ CRIPTOGRÁFICA-SHA256                Score:  100.0% [PASS]
+   SHA-256 calculado: 9d6c7ba31c275157c94903a21526e2abbc78647cb9be650f957fc2010b55ca4d
+
+✓ CRIPTOGRÁFICA-BLAKE2B               Score:  100.0% [PASS]
+   BLAKE2b calculado: cc5a7b2d69af753985685bef520c200a6d7455c1fd58aee19c7f1ea58937781521eee535d45b000b6e05702dd4811647138774a3671147ae55263f8354477bac
+
+✓ CRIPTOGRÁFICA-CRC32                 Score:  100.0% [PASS]
+   CRC32: 97a1444d
+
+✓ ESTRUTURAL-VALIDEZ                  Score:  100.0% [PASS]
+   Bases válidas: 17230/17230 (100.0%), N's: 0
+
+✓ ESTRUTURAL-GC_CONTENT               Score:  100.0% [PASS]
+   GC%: 45.8% (esperado: 40-60%)
+
+✓ ESTRUTURAL-AT_RATIO                 Score:  100.0% [PASS]
+   Razão A+T: 54.2%
+
+✓ BIOLÓGICA-CODONS                    Score:   98.5% [PASS]
+   Codons únicos encontrados: 64/64
+
+✓ BIOLÓGICA-ORFS                      Score:  100.0% [PASS]
+   Codons iniciais (ATG/GTG/TTG): 409, Codons terminais (TAA/TAG/TGA): 865
+
+✓ FILOGENÉTICA-CONSERVAÇÃO            Score:   85.0% [PASS]
+   Comprimento: 17,230bp. Conservação estimada vs referências: esperado 70-90%
+
+
+────────────────────────────────────────────────────────────────────────
+
+INTERPRETAÇÃO:
+- Score 90-100%: PASS - Sequência íntegra, pronta para uso
+- Score 70-89%: WARN - Verificação necessária antes de uso
+- Score < 70%: FAIL - Possível corrupção, investigar
+
+Data: 2026-07-17T12:17:57.343410
+
+════════════════════════════════════════════════════════════════════════

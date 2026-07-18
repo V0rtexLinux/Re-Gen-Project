@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "re-gen"
+version = "3.0.0"
+description = "Paleontological genome reconstruction pipeline using ancestral sequence reconstruction, CRISPR design, and phylogenetic bracketing"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Re-Gen Contributors" }]
+keywords = ["bioinformatics", "paleontology", "genome", "crispr", "de-extinction"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "biopython>=1.83",
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+gui = ["matplotlib>=3.8", "PyQt5>=5.15"]
+hardware = ["pyserial>=3.5"]
+ai = ["ollama>=0.4"]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.3",
+    "mypy>=1.9",
+]
+
+[project.scripts]
+re-gen = "re_gen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/re_gen"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "RUF", "T201"]
+ignore = ["E501", "N802", "N803", "N806", "N815", "RUF012"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"src/re_gen/pipeline/main.py" = ["T201"]
+"src/re_gen/pipeline/main_v3.py" = ["T201"]
+"src/re_gen/core/genome_streaming.py" = ["T201"]
+"src/re_gen/core/crispr_engine.py" = ["T201"]
+"src/re_gen/core/enzyme_library.py" = ["T201"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+check_untyped_defs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short --cov=re_gen --cov-report=term-missing"
