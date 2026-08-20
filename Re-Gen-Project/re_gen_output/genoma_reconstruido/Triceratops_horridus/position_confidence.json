@@ -1,0 +1,14 @@
+{
+  "dinosaur": "Triceratops horridus",
+  "mean_confidence": 99.99709808473592,
+  "total_length": 17230,
+  "n_references": 26,
+  "low_confidence_regions": [
+    {
+      "start": 5563,
+      "end": 5564
+    }
+  ],
+  "method": "phylogenetic_bracket",
+  "timestamp": "2026-07-17T12:08:23.205230"
+}
