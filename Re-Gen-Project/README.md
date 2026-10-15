@@ -15,11 +15,31 @@ pip install -e ".[hardware,ai]"
 ## Quick Start
 
 ```bash
-# v3 pipeline (AI-orchestrated)
-re-gen v3 --species "Tyrannosaurus rex" --ncbi-email user@example.com
+# Automatic species selection
+re-gen --email user@example.com
 
-# v2 pipeline (reference search + CRISPR)
-re-gen v2 --gene "cytochrome b" --host-species "Struthio camelus" --ncbi-email user@example.com
+# Specific dinosaur, full 9-stage pipeline (selection -> phylogenetic
+# mapping -> fossil extraction -> genome reconstruction -> CRISPR package ->
+# DNA synthesis -> embryo injection -> incubation -> AI report)
+re-gen --email user@example.com --dinosaur "Tyrannosaurus rex"
+
+# With a real fossil fragment (FASTA) and physical hardware enabled
+re-gen \
+    --email user@example.com \
+    --dinosaur "Velociraptor mongoliensis" \
+    --fossil my_fossil.fasta \
+    --hardware \
+    --arduino-port /dev/ttyUSB0
+
+# Run only the reconstruction phases (0-3), skip CRISPR/hardware/report
+re-gen --email user@example.com --dinosaur "Triceratops horridus" --fase-fim 3
+
+# List all catalogued species / show the pipeline architecture map
+re-gen --lista
+re-gen --arquitetura
+
+# Launch the GUI
+re-gen --gui
 ```
 
 ## Project Structure
@@ -27,13 +47,18 @@ re-gen v2 --gene "cytochrome b" --host-species "Struthio camelus" --ncbi-email u
 ```
 src/re_gen/
   core/           # CRISPR design, genome synthesis, validation, reconstruction
-  data/           # Dinosaur database, paleontology, descendant mapping
-  ncbi/           # NCBI/UniProt/CrossRef reference search
+  data/           # Dinosaur database (60 species), paleontology, descendant mapping
+  ncbi/           # NCBI Entrez deep reference search
   ai/             # Ollama integration, AI tool-calling framework
   hardware/       # Device abstraction with simulation fallback
-  pipeline/       # v2 and v3 orchestration pipelines
+  monitoring/     # PubMed/tech-watch monitoring
+  gui/            # PyQt5 desktop GUI
+  pipeline/       # Unified 9-stage reconstruction/revival pipeline
   cli.py          # CLI entry point
   exceptions.py   # Exception hierarchy
+
+docs/             # UTERO_OVO.md hardware documentation
+tests/            # Unit test suite (pytest)
 ```
 
 ## Development
@@ -62,4 +87,3 @@ All hardware modules support **simulation mode** when physical devices aren't av
 ## License
 
 MIT
-# Re-Gen-Project
